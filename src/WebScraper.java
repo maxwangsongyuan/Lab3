@@ -20,6 +20,13 @@ public class WebScraper {
         return contents;
     }
     public static void main(String[] unused) {
-        System.out.println(urlToString("http://erdani.com/tdpl/hamlet.txt"));
+        int count = 0;
+        for (int i = 0; i < urlToString("http://erdani.com/tdpl/hamlet.txt").length(); i++) {
+            String x = "prince";
+            if (urlToString("http://erdani.com/tdpl/hamlet.txt").equals(x)) {
+                count++;
+            }
+        }
+        System.out.println(count);
     }
 }
